@@ -1,0 +1,15 @@
+import math
+
+def linear_structure18(a,b,c):
+    number1 = (pow((c-1), 2)) / (5.4 * b)
+
+    number2 = ((c-1) * 0.015) / (5.4 * a)
+
+    return (a / b) * (math.sqrt(number1 + number2 - 1 + c))
+
+
+a = pow(10, 3)
+b = 33.3
+c = 2.1
+
+print(linear_structure18(a,b,c))
